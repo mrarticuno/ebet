@@ -12,6 +12,11 @@ class Match extends Model
         'image', 'link_transmission', 'dt_match', 'dt_begin', 'dt_end', 'championship_id', 'transmission', 'finished', 'active'
     ];
 
+    public function statistics()
+    {
+        return $this->HasOne('App\Match_Statiscs');
+    }
+
     public function championship()
     {
         return $this->BelongsTo('App\Championship');
