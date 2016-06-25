@@ -15,7 +15,7 @@ class CreateUploadsTable extends Migration
         Schema::create('uploads', function (Blueprint $table) {
             $table->increments('id');
             $table->text("name_file");
-            $table->string("extesion");
+            $table->string("extension");
             $table->string("mime_type")->nullable();
             $table->boolean("active");
             $table->timestamps();

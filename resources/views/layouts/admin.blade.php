@@ -154,7 +154,7 @@
                         <li role="separator" class="divider"></li>
                         <li><a href="#"><i class="ti-shield"></i> Segurança</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="./logout"><i class="fa fa-power-off"></i> Logout</a></li>
+                        <li><a href="{{ $root }}logout"><i class="fa fa-power-off"></i> Logout</a></li>
                     </ul>
                     <!-- /.dropdown-user -->
                 </li>

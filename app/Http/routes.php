@@ -31,16 +31,21 @@ Route::group(['middleware' => 'web'], function () {
     Route::auth();
     Route::get('/', 'HomeController@index');
     Route::get('/nope', 'HomeController@notToday');
-    Route::get('/admin', 'AdminController@index');
 
-    Route::group(['prefix' => 'admin/user'], function()
+    Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function()
     {
-        Route::get('/index', ['as' => 'usuario.index', 'uses' => 'UserController@index']);
-        Route::get('create', ['as' => 'usuario.create', 'uses' => 'UserController@create']);
-        Route::post('insert', ['as' => 'usuario.store', 'uses' => 'UserController@store']);
-        Route::get('edit/{id}', ['as' => 'usuario.edit', 'uses' => 'UserController@edit']);
-        Route::get('show/{id}', ['as' => 'usuario.show', 'uses' => 'UserController@show']);
-        Route::post('update', ['as' => 'usuario.update', 'uses' => 'UserController@update']);
-        Route::get('delete/{id}', ['as' => 'usuario.remove', 'uses' => 'UserController@remove']);
+        Route::get('/admin', 'AdminController@index');
+        Route::group(['prefix' => 'admin/user'], function()
+        {
+            Route::get('/index', ['as' => 'usuario.index', 'uses' => 'UserController@index']);
+            Route::get('create', ['as' => 'usuario.create', 'uses' => 'UserController@create']);
+            Route::post('insert', ['as' => 'usuario.store', 'uses' => 'UserController@store']);
+            Route::get('edit/{id}', ['as' => 'usuario.edit', 'uses' => 'UserController@edit']);
+            Route::get('show/{id}', ['as' => 'usuario.show', 'uses' => 'UserController@show']);
+            Route::post('update', ['as' => 'usuario.update', 'uses' => 'UserController@update']);
+            Route::get('delete/{id}', ['as' => 'usuario.remove', 'uses' => 'UserController@destroy']);
+        });
     });
+
+
 });
