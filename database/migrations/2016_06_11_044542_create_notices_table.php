@@ -18,12 +18,18 @@ class CreateNoticesTable extends Migration
             $table->text('body');
             $table->integer('view_counter')->unsigned();
             $table->integer('user_id')->unsigned();
+            $table->integer('upload_id')->unsigned()->nullable();
             $table->boolean('active')->unsigned();
             $table->timestamps();
 
             $table->foreign('user_id')
                 ->references('id')
                 ->on('users')
+                ->onDelete('cascade');
+
+            $table->foreign('upload_id')
+                ->references('id')
+                ->on('uploads')
                 ->onDelete('cascade');
         });
 

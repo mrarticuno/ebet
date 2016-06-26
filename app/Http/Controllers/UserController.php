@@ -115,7 +115,7 @@ class UserController extends Controller
         $user = User::find($id);
         $imagem = Upload::find($user->upload_id);
 
-        return view('user.show', compact('root', 'user','imagem'));
+        return view('user.show', compact('root', 'user', 'imagem'));
     }
 
     /**

@@ -187,14 +187,10 @@
                     </ul>
                     <!-- /.nav-second-level -->
                 </li>
-                <li> <a href="#" class="waves-effect"><i class="ti-pie-chart fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                <li> <a href="#" class="waves-effect"><i class="ti-pie-chart fa-fw"></i> Noticias<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li> <a href="flot.htm">Flot Charts</a> </li>
-                        <li><a href="morris-chart.htm">Morris Chart</a></li>
-                        <li><a href="chart-js.htm">Chart-js</a></li>
-                        <li><a href="peity-chart.htm">Peity Charts</a></li>
-                        <li><a href="sparkline-chart.htm">Sparkline charts</a></li>
-                        <li><a href="extra-charts.htm">Extra Charts</a></li>
+                        <li><a href="{{ $root }}admin/post/index">Listar Noticias</a></li>
+                        <li><a href="{{ $root }}admin/post/create">Criar Noticia</a></li>
                     </ul>
                     <!-- /.nav-second-level -->
                 </li>

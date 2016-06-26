@@ -32,9 +32,23 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/', 'HomeController@index');
     Route::get('/nope', 'HomeController@notToday');
 
+    /*
+     * Post
+     * */
+    Route::group(['prefix' => 'post'], function()
+    {
+        Route::get('show/{id}', ['as' => 'notice.show', 'uses' => 'NoticeController@show']);
+    });
+    /*
+     * Requer permissão de ADMIN
+     * */
     Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function()
     {
         Route::get('/admin', 'AdminController@index');
+
+        /*
+         * Usuario
+         * */
         Route::group(['prefix' => 'admin/user'], function()
         {
             Route::get('/index', ['as' => 'usuario.index', 'uses' => 'UserController@index']);
@@ -44,6 +58,19 @@ Route::group(['middleware' => 'web'], function () {
             Route::get('show/{id}', ['as' => 'usuario.show', 'uses' => 'UserController@show']);
             Route::post('update', ['as' => 'usuario.update', 'uses' => 'UserController@update']);
             Route::get('delete/{id}', ['as' => 'usuario.remove', 'uses' => 'UserController@destroy']);
+        });
+
+        /*
+         * Post
+         * */
+        Route::group(['prefix' => 'admin/post'], function()
+        {
+            Route::get('/index', ['as' => 'notice.index', 'uses' => 'NoticeController@index']);
+            Route::get('create', ['as' => 'notice.create', 'uses' => 'NoticeController@create']);
+            Route::post('insert', ['as' => 'notice.store', 'uses' => 'NoticeController@store']);
+            Route::get('edit/{id}', ['as' => 'notice.edit', 'uses' => 'NoticeController@edit']);
+            Route::post('update', ['as' => 'notice.update', 'uses' => 'NoticeController@update']);
+            Route::get('delete/{id}', ['as' => 'notice.remove', 'uses' => 'NoticeController@destroy']);
         });
     });
 

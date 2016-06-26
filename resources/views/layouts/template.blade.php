@@ -11,14 +11,14 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="assets\css\bootstrap.min.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="assets\css\jquery.bxslider.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="assets\css\font-awesome.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="assets\css\magnific-popup.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="assets\css\owl.carousel.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="assets\css\owl.theme.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="assets\css\ticker-style.css">
-    <link rel="stylesheet" type="text/css" href="assets\css\style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ $root }}assets\css\bootstrap.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ $root }}assets\css\jquery.bxslider.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ $root }}assets\css\font-awesome.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ $root }}assets\css\magnific-popup.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ $root }}assets\css\owl.carousel.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ $root }}assets\css\owl.theme.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ $root }}assets\css\ticker-style.css">
+    <link rel="stylesheet" type="text/css" href="{{ $root }}assets\css\style.css" media="screen">
 
 </head>
 <body>
@@ -77,15 +77,15 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="./"><img src="assets\images\logo.png" alt=""></a>
+                        <a class="navbar-brand" href="./"><img src="{{ $root }}assets\images\logo.png" alt=""></a>
                     </div>
 
                     <div class="advertisement">
                         <div class="desktop-advert">
-                            <img src="upload\addsense\468x60.jpg" alt="">
+                            <img src="{{ $root }}upload\addsense\468x60.jpg" alt="">
                         </div>
                         <div class="tablet-advert">
-                            <img src="upload\addsense\468x60.jpg" alt="">
+                            <img src="{{ $root }}upload\addsense\468x60.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
 
                                                     <div class="item news-post standard-post">
                                                         <div class="post-gallery">
-                                                            <img src="upload\news-posts\st1.jpg" alt="">
+                                                            <img src="{{ $root }}upload\news-posts\st1.jpg" alt="">
                                                             <div class="rate-level">
                                                                 <p><span>7.4</span> Good</p>
                                                             </div>
@@ -127,7 +127,7 @@
 
                                                     <div class="item news-post standard-post">
                                                         <div class="post-gallery">
-                                                            <img src="upload\news-posts\st2.jpg" alt="">
+                                                            <img src="{{ $root }}upload\news-posts\st2.jpg" alt="">
                                                             <div class="rate-level">
                                                                 <p><span>7.4</span> Good</p>
                                                             </div>
@@ -143,7 +143,7 @@
 
                                                     <div class="item news-post standard-post">
                                                         <div class="post-gallery">
-                                                            <img src="upload\news-posts\st3.jpg" alt="">
+                                                            <img src="{{ $root }}upload\news-posts\st3.jpg" alt="">
                                                             <div class="rate-level">
                                                                 <p><span>7.4</span> Good</p>
                                                             </div>
@@ -159,7 +159,7 @@
 
                                                     <div class="item news-post standard-post">
                                                         <div class="post-gallery">
-                                                            <img src="upload\news-posts\st4.jpg" alt="">
+                                                            <img src="{{ $root }}upload\news-posts\st4.jpg" alt="">
                                                             <div class="rate-level">
                                                                 <p><span>7.4</span> Good</p>
                                                             </div>
@@ -175,7 +175,7 @@
 
                                                     <div class="item news-post standard-post">
                                                         <div class="post-gallery">
-                                                            <img src="upload\news-posts\st5.jpg" alt="">
+                                                            <img src="{{ $root }}upload\news-posts\st5.jpg" alt="">
                                                             <div class="rate-level">
                                                                 <p><span>7.4</span> Good</p>
                                                             </div>
@@ -208,7 +208,7 @@
 
                                                     <div class="item news-post standard-post">
                                                         <div class="post-gallery">
-                                                            <img src="upload\news-posts\st1.jpg" alt="">
+                                                            <img src="{{ $root }}upload\news-posts\st1.jpg" alt="">
                                                             <div class="rate-level">
                                                                 <p><span>7.4</span> Good</p>
                                                             </div>
@@ -224,7 +224,7 @@
 
                                                     <div class="item news-post standard-post">
                                                         <div class="post-gallery">
-                                                            <img src="upload\news-posts\st2.jpg" alt="">
+                                                            <img src="{{ $root }}upload\news-posts\st2.jpg" alt="">
                                                             <div class="rate-level">
                                                                 <p><span>7.4</span> Good</p>
                                                             </div>
@@ -240,7 +240,7 @@
 
                                                     <div class="item news-post standard-post">
                                                         <div class="post-gallery">
-                                                            <img src="upload\news-posts\st3.jpg" alt="">
+                                                            <img src="{{ $root }}upload\news-posts\st3.jpg" alt="">
                                                             <div class="rate-level">
                                                                 <p><span>7.4</span> Good</p>
                                                             </div>
@@ -256,7 +256,7 @@
 
                                                     <div class="item news-post standard-post">
                                                         <div class="post-gallery">
-                                                            <img src="upload\news-posts\st4.jpg" alt="">
+                                                            <img src="{{ $root }}upload\news-posts\st4.jpg" alt="">
                                                             <div class="rate-level">
                                                                 <p><span>7.4</span> Good</p>
                                                             </div>
@@ -272,7 +272,7 @@
 
                                                     <div class="item news-post standard-post">
                                                         <div class="post-gallery">
-                                                            <img src="upload\news-posts\st5.jpg" alt="">
+                                                            <img src="{{ $root }}upload\news-posts\st5.jpg" alt="">
                                                             <div class="rate-level">
                                                                 <p><span>7.4</span> Good</p>
                                                             </div>
@@ -373,7 +373,7 @@
                             <h1>Random Post</h1>
                             <ul class="list-posts">
                                 <li>
-                                    <img src="upload\news-posts\listw4.jpg" alt="">
+                                    <img src="{{ $root }}upload\news-posts\listw4.jpg" alt="">
                                     <div class="post-content">
                                         <a href="game-category.htm">x-box</a>
                                         <h2><a href="single-post.htm">Pellentesque odio nisi, euismod in ultricies in, diam. </a></h2>
@@ -384,7 +384,7 @@
                                 </li>
 
                                 <li>
-                                    <img src="upload\news-posts\listw1.jpg" alt="">
+                                    <img src="{{ $root }}upload\news-posts\listw1.jpg" alt="">
                                     <div class="post-content">
                                         <a href="game-category.htm">PS4</a>
                                         <h2><a href="single-post.htm">Sed arcu. Cras consequat.</a></h2>
@@ -395,7 +395,7 @@
                                 </li>
 
                                 <li>
-                                    <img src="upload\news-posts\listw3.jpg" alt="">
+                                    <img src="{{ $root }}upload\news-posts\listw3.jpg" alt="">
                                     <div class="post-content">
                                         <a href="game-category.htm">other</a>
                                         <h2><a href="single-post.htm">Phasellus ultrices nulla quis nibh. Quisque a lectus.</a></h2>
@@ -439,12 +439,12 @@
                         <div class="widget flickr-widget">
                             <h1>Flickr Photos</h1>
                             <ul class="flickr-list">
-                                <li><a href="#"><img src="upload\flickr\1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="upload\flickr\2.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="upload\flickr\3.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="upload\flickr\4.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="upload\flickr\5.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="upload\flickr\6.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="{{ $root }}upload\flickr\1.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="{{ $root }}upload\flickr\2.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="{{ $root }}upload\flickr\3.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="{{ $root }}upload\flickr\4.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="{{ $root }}upload\flickr\5.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="{{ $root }}upload\flickr\6.jpg" alt=""></a></li>
                             </ul>
                             <a href="#">View more photos...</a>
                         </div>
@@ -474,25 +474,25 @@
 </div>
 <!-- End Container -->
 
-<script type="text/javascript" src="assets\js\ads.js"></script>
+<script type="text/javascript" src="{{ $root }}assets\js\ads.js"></script>
 <script>
     if( window.canRunAds === undefined ){
         window.location = './nope';
     }
 </script>
 
-<script type="text/javascript" src="assets\js\jquery.min.js"></script>
-<script type="text/javascript" src="assets\js\jquery.migrate.js"></script>
-<script type="text/javascript" src="assets\js\jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="assets\js\jquery.bxslider.min.js"></script>
-<script type="text/javascript" src="assets\js\bootstrap.min.js"></script>
-<script type="text/javascript" src="assets\js\jquery.ticker.js"></script>
-<script type="text/javascript" src="assets\js\jquery.imagesloaded.min.js"></script>
-<script type="text/javascript" src="assets\js\jquery.isotope.min.js"></script>
-<script type="text/javascript" src="assets\js\owl.carousel.min.js"></script>
-<script type="text/javascript" src="assets\js\retina-1.1.0.min.js"></script>
-<script type="text/javascript" src="assets\js\plugins-scroll.js"></script>
-<script type="text/javascript" src="assets\js\script.js"></script>
+<script type="text/javascript" src="{{ $root }}assets\js\jquery.min.js"></script>
+<script type="text/javascript" src="{{ $root }}assets\js\jquery.migrate.js"></script>
+<script type="text/javascript" src="{{ $root }}assets\js\jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="{{ $root }}assets\js\jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="{{ $root }}assets\js\bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ $root }}assets\js\jquery.ticker.js"></script>
+<script type="text/javascript" src="{{ $root }}assets\js\jquery.imagesloaded.min.js"></script>
+<script type="text/javascript" src="{{ $root }}assets\js\jquery.isotope.min.js"></script>
+<script type="text/javascript" src="{{ $root }}assets\js\owl.carousel.min.js"></script>
+<script type="text/javascript" src="{{ $root }}assets\js\retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="{{ $root }}assets\js\plugins-scroll.js"></script>
+<script type="text/javascript" src="{{ $root }}assets\js\script.js"></script>
 
 </body>
 </html>

@@ -24,4 +24,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function image()
+    {
+        return $this->belongsTo('App\Upload', 'upload_id');
+    }
 }

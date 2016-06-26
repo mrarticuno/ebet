@@ -25,10 +25,11 @@ class HomeController extends Controller
     public function index()
     {
         /*$user = User::where('active', 1)->count();*/
+        $root = "";
         $utilController = new UtilController();
         $userInfo = $utilController->ip_info("189.115.200.192", "Location");
 
-        return view('home')->with(compact('userInfo'));
+        return view('home')->with(compact('userInfo','root'));
     }
 
     public function notToday(){
